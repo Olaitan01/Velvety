@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+  overflow-x: hidden;
+  font-family: "Courier New", Courier, monospace;
+  background: #f2f6ef;
+  color: #3c5d39;
+}
+.flexDesign {
+  @apply flex justify-between gap-4;
+}
