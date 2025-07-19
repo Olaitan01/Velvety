@@ -50,7 +50,7 @@ function Benefits() {
         ))}
       </div>
     </div>
-          <hr className="h-[0.05em] bg-[#e4ece0] border-none" />
+          <hr className="h-[0.15em] bg-[#e4ece0] border-none" />
 
     </div>
   );

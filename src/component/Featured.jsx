@@ -37,10 +37,21 @@ function Featured() {
           Facial and skincare, natural and certified organic
         </h2>
       </div>
-      <div className="flex flex-row justify-center items-center gap-6 border-t-[0.05em] border-[#e4ece0] p-[2em]">
+      <div className="flex flex-row justify-center items-center gap-6 border-t-[0.15em] border-b-[0.15em] border-[#e4ece0] px-[2em]">
         {items.map(({ img, name, price, rating }, index) => (
-          <div key={index} className="flex flex-col px-[2em] gap-[1.8em] ">
-            <div className="bg-[#e4ece0] flex justify-center items-center">
+          <div
+            key={index}
+            className={`flex flex-col p-[2em] gap-[1.8em] ${
+              name !== "HOLOCENA"
+                ? "border-r-[0.15em] border-[#e4ece0]"
+                : " border-none"
+            }`}
+          >
+            <div
+              className={`bg-[#e4ece0] flex justify-center items-center ${
+                name === "NOTORIOUS" ? "rounded-full" : "rounded-none"
+              }`}
+            >
               <img src={img} alt={name} className="max-w-full object-fill" />
             </div>
 
@@ -48,7 +59,7 @@ function Featured() {
               <span className="text-left text-2xl font-semibold">{name}</span>
               <div className="flex flex-row justify-between items-center">
                 <span className="text-xl font-bold">{price}</span>
-                <div>
+                <div className="flex items-start gap-2">
                   <Stack spacing={1}>
                     <Rating
                       name="half-rating-read"
@@ -58,6 +69,7 @@ function Featured() {
                       style={{ color: "#3c5d39" }}
                     />
                   </Stack>
+                  <span className="font-light text-xl">{rating}.0</span>
                 </div>
               </div>
             </div>
