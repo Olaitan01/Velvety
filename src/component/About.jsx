@@ -6,7 +6,7 @@ function About() {
       <div className="flex flex-row justify-between items-start ">
         <div className="flex flex-col gap-y-8 w-[100%]">
           <h3 className="text-2xl font-light">About us</h3>
-          <span className="text-3xl font-semibold w-[70%]">
+          <span className="subHeading">
             Velvety facial and skincare company
           </span>
         </div>

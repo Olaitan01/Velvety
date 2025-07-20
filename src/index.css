@@ -18,3 +18,7 @@ body {
 .headerStyle {
   @apply text-2xl font-light;
 }
+
+.subHeading {
+  @apply text-3xl font-semibold w-[70%];
+}
