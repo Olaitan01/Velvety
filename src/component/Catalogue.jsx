@@ -1,4 +1,9 @@
 import React from "react";
+import classwing from "../asset/Velvety2.png";
+import holocane from "../asset/Velvety3.png";
+import inamorata from "../asset/Velvety5.png";
+import lightcool from "../asset/Velvety6.png";
+import ProductCard from "./ProductCard";
 
 function Catalogue() {
   const catalogues = [
@@ -51,12 +56,40 @@ function Catalogue() {
     },
   ];
 
+  const items = [
+    {
+      img: classwing,
+      name: "CLASSWING",
+      price: "$20",
+      rating: 5,
+    },
+    {
+      img: lightcool,
+      name: "LIGHTCOOL",
+      price: "$20",
+      rating: 5,
+    },
+
+    {
+      img: holocane,
+      name: "Holocane",
+      price: "$23",
+      rating: 5,
+    },
+    {
+      img: inamorata,
+      name: "INAMORATA",
+      price: "$20",
+      rating: 4.5,
+    },
+  ];
+
   return (
-    <div className="py-[6em]">
-      <div className="flex flex-col gap-6 w-[80%] m-auto justify-center">
+    <div className="py-[6em] flex-row flex items-start w-[80%] m-auto justify-between">
+      <div className="flex flex-col gap-6 w-[70%]">
         <h3 className="headerStyle">All Products</h3>
         <span className="subHeading">Mild skincare & facial routine</span>
-        <div className=" flex flex-row flex-wrap gap-4 :">
+        <div className=" flex flex-row flex-wrap gap-4  ">
           {catalogues.map(({ feature }, index) => (
             <div
               key={index}
@@ -67,7 +100,13 @@ function Catalogue() {
           ))}
         </div>
       </div>
-      <div></div>
+      <div className="flex flex-row flex-wrap gap-4 w-[100%] items-stretch">
+        {items.map(({ img, name, price, rating }, index) => (
+          <div key={index}>
+            <ProductCard img={img} name={name} price={price} rating={rating} />
+          </div>
+        ))}{" "}
+      </div>
     </div>
   );
 }
