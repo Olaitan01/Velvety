@@ -5,7 +5,16 @@ body {
   font-family: "Courier New", Courier, monospace;
   background: #f2f6ef;
   color: #3c5d39;
+  scroll-behavior: smooth;
 }
 .flexDesign {
   @apply flex justify-between gap-4;
+}
+
+.aboutText {
+  @apply text-xl w-[100%] text-justify;
+}
+
+.headerStyle {
+  @apply text-2xl font-light;
 }
