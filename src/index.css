@@ -20,5 +20,5 @@ body {
 }
 
 .subHeading {
-  @apply text-3xl font-semibold w-[70%];
+  @apply text-4xl font-semibold w-[85%];
 }

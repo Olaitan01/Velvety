@@ -92,16 +92,16 @@ function Catalogue() {
         <span className="subHeading">Mild skincare & facial routine</span>
         <div className=" flex flex-row flex-wrap gap-4  ">
           {catalogues.map(({ feature }, index) => (
-            <div
+            <button
               key={index}
               className="border-[0.05em] border-[#899f87] hover:bg-[#e4ece0] hover:font-semibold cursor-pointer rounded-full text-center text-xl p-[0.5em] "
             >
               {feature}{" "}
-            </div>
+            </button>
           ))}
         </div>
       </div>
-      <div >
+      <div>
         <div className="flex flex-row flex-wrap gap-4 w-[100%] items-stretch">
           {items.map(({ img, name, price, rating }, index) => (
             <div key={index}>
@@ -114,7 +114,9 @@ function Catalogue() {
             </div>
           ))}{" "}
         </div>
-<Btn btnText={'Shop now'}/>    
+        <div className="ml-[4em]">
+          <Btn btnText={"Shop now"} />
+        </div>{" "}
       </div>
     </div>
   );

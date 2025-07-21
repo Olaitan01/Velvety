@@ -6,9 +6,7 @@ function Btn({ btnText }) {
     <div>
       <Button
         variant="outlined"
-        
         style={{
-          margin: "0 0 0 4em",
           borderColor: " #3c5d39",
           color: "#3c5d39",
           borderRadius: "0px",
@@ -16,7 +14,7 @@ function Btn({ btnText }) {
           gap: "1em",
           justifyItems: "center",
           alignItems: "center",
-          
+          textTransform: "capitalize",
         }}
       >
         {btnText}
