@@ -4,6 +4,7 @@ import holocane from "../asset/Velvety3.png";
 import inamorata from "../asset/Velvety5.png";
 import lightcool from "../asset/Velvety6.png";
 import ProductCard from "./ProductCard";
+import Btn from "./Btn";
 
 function Catalogue() {
   const catalogues = [
@@ -85,7 +86,7 @@ function Catalogue() {
   ];
 
   return (
-    <div className="py-[6em] flex-row flex items-start w-[80%] m-auto justify-between">
+    <div className="py-[6em] flex-row flex items-start w-[80%] m-auto gap-4">
       <div className="flex flex-col gap-6 w-[70%]">
         <h3 className="headerStyle">All Products</h3>
         <span className="subHeading">Mild skincare & facial routine</span>
@@ -100,12 +101,20 @@ function Catalogue() {
           ))}
         </div>
       </div>
-      <div className="flex flex-row flex-wrap gap-4 w-[100%] items-stretch">
-        {items.map(({ img, name, price, rating }, index) => (
-          <div key={index}>
-            <ProductCard img={img} name={name} price={price} rating={rating} />
-          </div>
-        ))}{" "}
+      <div >
+        <div className="flex flex-row flex-wrap gap-4 w-[100%] items-stretch">
+          {items.map(({ img, name, price, rating }, index) => (
+            <div key={index}>
+              <ProductCard
+                img={img}
+                name={name}
+                price={price}
+                rating={rating}
+              />
+            </div>
+          ))}{" "}
+        </div>
+<Btn btnText={'Shop now'}/>    
       </div>
     </div>
   );
