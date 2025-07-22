@@ -6,6 +6,7 @@ import Brands from "./component/Brands";
 import CTA from "./component/CTA";
 import Catalogue from "./component/Catalogue";
 import Services from "./component/Services";
+import Testimonial from "./component/Testimonial";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
       <CTA />
       <Catalogue />
       <Services />
+      <Testimonial />
     </>
   );
 }
