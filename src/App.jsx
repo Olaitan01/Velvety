@@ -7,6 +7,7 @@ import CTA from "./component/CTA";
 import Catalogue from "./component/Catalogue";
 import Services from "./component/Services";
 import Testimonial from "./component/Testimonial";
+import Perks from "./component/Perks";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
       <Catalogue />
       <Services />
       <Testimonial />
+      <Perks />
     </>
   );
 }
