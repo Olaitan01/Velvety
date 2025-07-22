@@ -8,6 +8,7 @@ import Catalogue from "./component/Catalogue";
 import Services from "./component/Services";
 import Testimonial from "./component/Testimonial";
 import Perks from "./component/Perks";
+import Subscribe from "./component/Subscribe";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <Services />
       <Testimonial />
       <Perks />
+      <Subscribe />
     </>
   );
 }
