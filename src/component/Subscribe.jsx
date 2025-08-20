@@ -14,46 +14,18 @@ function Subscribe() {
         </span>
       </div>
       <div className="relative">
-        <Box
-          component="form"
-          sx={{
-            "& > :not(style)": { m: 1, width: "55ch" },
-            bgcolor: "#ffffff",
-          }}
-          noValidate
-          autoComplete="off"
-        >
-          <TextField
-            id="outlined-suffix-shrink"
-            label="Drop your email here"
-            variant="outlined"
-            slotProps={{
-              input: {
-                endAdornment: (
-                  <InputAdornment
-                    position="end"
-                    sx={{
-                      opacity: 0,
-                      pointerEvents: "none",
-                      [`[data-shrink=true] ~ .${inputBaseClasses.root} > &`]: {
-                        opacity: 1,
-                      },
-                    }}
-                  >
-                    lbs
-                  </InputAdornment>
-                ),
-              },
-            }}
-          />
-        </Box>{" "}
+        <input
+          type="text"
+          className="w-[20em] h-[6vh] rounded-sm border-none outline-0  p-2 text-2xl font-medium bg-[#ffffff]"
+          placeholder="Drop your email here"
+        />
         <svg
           width="48"
           height="31"
           viewBox="0 0 48 31"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute top-1/3 right-3"
+          className="absolute top-1/4 right-3"
         >
           <path
             fill-rule="evenodd"

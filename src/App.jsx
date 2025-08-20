@@ -9,6 +9,7 @@ import Services from "./component/Services";
 import Testimonial from "./component/Testimonial";
 import Perks from "./component/Perks";
 import Subscribe from "./component/Subscribe";
+import Footer from "./component/Footer";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
       <Testimonial />
       <Perks />
       <Subscribe />
+      <Footer />
     </>
   );
 }
